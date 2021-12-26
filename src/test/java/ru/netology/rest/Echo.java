@@ -18,7 +18,8 @@ public class Echo {
 // Проверки
                 .then()
                 .statusCode(200)
-                .body("data",equalTo("some value"))
+                .body("data",equalTo("some data"))
+                .header("Content-Type", equalTo("application/json; charset=utf-8"))
                 ;
     }
 }
